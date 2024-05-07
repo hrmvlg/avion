@@ -1,0 +1,58 @@
+@import 'mixins';
+
+body{
+    @include fluid-text(18, 14);
+
+    font-family: var(--font-family-base);
+    color: var(--color-dark-primary);
+    line-height: 1.5;
+    background-color: var(--color-white);
+
+}
+
+a,
+button,
+input,
+textarea,
+svg * {
+    transition-duration: var(--transition-duration);
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+button{
+    border: none;
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-weight: 400;
+    line-height: 1.4;
+}
+
+h1{
+    font-style: 36px;
+}
+
+h2{
+    font-style: 32px;
+}
+
+h3{
+    font-style: 24px;
+}
+
+h4{
+    font-style: 20px;
+}
+
+h5{
+    font-style: 16px;
+}
+
+h6{
+    font-style: 14px;
+}
