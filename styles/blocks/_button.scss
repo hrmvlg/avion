@@ -1,0 +1,61 @@
+.button {
+    height: var(--button-height);
+    padding: 16px 32px;
+    font-size: 16px;
+
+    &:focus {
+        border: var(--border-button);
+    }
+
+    &:disabled {
+        opacity: 0.5;
+    }
+
+    &--white {
+        background-color: var(--color-white);
+
+        @include hover {
+            background-color: var(--color-light-gray);
+        }
+    }
+
+    &--secondary {
+        background-color: var(--color-light-gray);
+
+        @include hover {
+            background-color: var(--color-border-gray);
+        }
+    }
+
+    &--primary {
+        background-color: var(--color-dark-primary);
+        color: var(--color-white);
+
+        @include hover {
+            background-color: var(--color-dark-primary-hover);
+        }
+    }
+
+    &--opaque {
+        background-color: rgba(249, 249, 249, 0.15);
+        color: var(--color-white);
+        border: var(--border-button-small);
+
+        @include hover {
+            background-color: rgba(249, 249, 249, 0.3);
+            border: none;
+        }
+    }
+
+    &--ghost {
+        background-color: transparent;
+
+        @include hover {
+            background-color: var(--color-border-gray);
+        }
+
+        &:disabled {
+            border: var(--border-button-small);
+        }
+    }
+}
