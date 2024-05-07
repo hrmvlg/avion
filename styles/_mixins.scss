@@ -1,0 +1,16 @@
+@mixin fluid-text($max: 36, $min: 18) {
+    font-size: clamp(#{$max}px, #{$max / 1440 * 100}vw, #{$min}px);
+}
+
+@mixin flex-center($IsInline: false) {
+    @if $IsInline {
+        display: inline-flex;
+    }
+
+    @else {
+        display: flex;
+    }
+
+    justify-content: center;
+    align-items: center;
+}
