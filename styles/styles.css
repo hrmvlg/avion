@@ -548,7 +548,7 @@ h6 {
   translate: -50% -50%;
   content: "";
   width: 50%;
-  height: 2px;
+  height: 1px;
   background-color: var(--color-primary-dark);
   transform: rotate(-45deg);
 }
@@ -559,7 +559,7 @@ h6 {
   translate: -50% -50%;
   content: "";
   width: 50%;
-  height: 2px;
+  height: 1px;
   background-color: var(--color-primary-dark);
   border-radius: 5px;
   transform: rotate(45deg);
