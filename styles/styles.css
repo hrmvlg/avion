@@ -385,8 +385,20 @@ h6 {
   align-items: center;
   justify-content: space-between;
 }
-.header__top-logo {
-  align-self: center;
+@media (max-width: 390px) {
+  .header__top {
+    justify-content: end;
+  }
+}
+@media (max-width: 390px) {
+  .header__top-search {
+    order: -2;
+  }
+}
+@media (max-width: 390px) {
+  .header__top-logo {
+    order: -3;
+  }
 }
 .header__top-group {
   display: flex;
@@ -436,6 +448,11 @@ h6 {
   background-color: var(--color-primary-dark);
   transition-duration: inherit;
 }
+@media (max-width: 390px) {
+  .header__burger-button {
+    order: -1;
+  }
+}
 
 .mobile-overlay {
   width: 100%;
@@ -443,6 +460,7 @@ h6 {
   margin: 0;
   padding: 15px 20px;
   border: none;
+  color: var(--color-primary-dark);
 }
 .mobile-overlay:modal {
   min-width: 100%;

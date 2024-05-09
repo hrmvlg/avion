@@ -35,6 +35,10 @@
                 </svg>    
                 </span>
             </div>
+            <button class="header__burger-button button__burger-menu burger-button visible-mobile" type="button"
+            onclick="mobileOverlay.showModal()">
+                <span class="visually-hidden">Open navigation menu</span>
+            </button>
         </div>
         <nav class="header__menu hidden-mobile">
             <ul class="header__menu-list">
@@ -75,10 +79,6 @@
                 </li>
             </ul>
         </nav>
-        <button class="header__burger-button button__burger-menu burger-button visible-mobile" type="button"
-                onclick="mobileOverlay.showModal()">
-                <span class="visually-hidden">Open navigation menu</span>
-        </button>
     </header>
 
     <dialog class="mobile-overlay visible-mobile" id="mobileOverlay">
