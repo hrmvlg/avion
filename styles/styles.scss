@@ -4,9 +4,12 @@
     'globals',
     'media',
     'mixins',
-    'variables';
+    'variables',
+    'utils';
 
 @import
     'blocks/button',
     'blocks/icon',
-    'blocks/header';
+    'blocks/header',
+    'blocks/mobile-overlay',
+    'blocks/burger-button';
