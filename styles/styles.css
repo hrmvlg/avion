@@ -224,6 +224,18 @@ h6 {
   font-size: 14px;
 }
 
+.body-small {
+  font-size: 14px;
+}
+
+.body-medium {
+  font-size: 16px;
+}
+
+.body-large {
+  font-size: 18px;
+}
+
 :root {
   --color-primary: #4e4d93;
   --color-primary-light: #726e8d;
@@ -666,4 +678,43 @@ h6 {
     order: -1;
     margin-top: 32px;
   }
+}
+
+.differences {
+  padding-top: 60px;
+  padding-bottom: 86px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 50px;
+  align-items: center;
+  --diffListGap: 70px;
+}
+.differences__list {
+  display: flex;
+  flex-direction: row;
+  -moz-column-gap: 70px;
+       column-gap: 70px;
+}
+.differences__item {
+  max-height: 124px;
+  min-width: 270px;
+}
+.differences__item:first-child {
+  margin-left: 6px;
+}
+
+.differences-card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  row-gap: 8px;
+}
+.differences-card__icon {
+  width: 24px;
+  height: 24px;
+  aspect-ratio: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 8px;
 }/*# sourceMappingURL=styles.css.map */

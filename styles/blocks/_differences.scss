@@ -1,0 +1,26 @@
+.differences {
+    padding-top: 60px;
+    padding-bottom: 86px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 50px;
+    align-items: center;
+
+    --diffListGap: 70px;
+
+    &__list {
+        display: flex;
+        flex-direction: row;
+        column-gap: 70px;
+    }
+
+    &__item {
+        max-height: 124px;
+        min-width: 270px;
+
+        &:first-child{
+            margin-left: 6px;
+        }
+    }
+
+}
