@@ -373,7 +373,7 @@ h6 {
 }
 
 .header {
-  padding-top: 20px;
+  padding-top: 26px;
   display: flex;
   flex-direction: column;
   padding-inline: 28px;
@@ -417,7 +417,7 @@ h6 {
 }
 .header__menu {
   padding-top: 20px;
-  margin-top: 20px;
+  margin-top: 28px;
   border-top: 1px solid rgba(0, 0, 0, 0.1);
 }
 .header__menu-list {
