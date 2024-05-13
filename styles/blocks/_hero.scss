@@ -1,26 +1,60 @@
-.hero{
+.hero {
     margin-block: 60px;
     background-color: var(--color-primary-dark);
     color: var(--color-white);
 
-    &__inner{
+    @include mobile {
+        margin: 0;
+    }
+
+    &__inner {
         display: flex;
         justify-content: space-between;
         column-gap: 98px;
     }
 
-    &__body{
+    &__body {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
         padding-block: 60px;
         padding-left: 60px;
+
+        @include mobile {
+            padding: 24px;
+            padding-top: 40px;
+        }
     }
 
-    &__top{
+    &__top {
         display: flex;
         flex-direction: column;
         align-items: flex-start;
         row-gap: 40px;
+        max-width: 513px;
+
+        @include mobile {
+            display: contents;
+        }
+    }
+
+    &__title {
+        @include mobile {
+            order: -3;
+        }
+    }
+
+    &__description {
+        @include mobile {
+            order: -2;
+            margin-top: 80px;
+        }
+    }
+
+    &__button {
+        @include mobile {
+            order: -1;
+            margin-top: 32px;
+        }
     }
 }
