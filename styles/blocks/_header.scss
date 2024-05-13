@@ -10,6 +10,8 @@
         align-items: center;
         justify-content: space-between;
 
+        position: relative;
+
         @include mobile{
             justify-content: end;
         }
@@ -21,9 +23,13 @@
         }
 
         &-logo {
+            @include abs-center;
 
             @include mobile{
+                position: unset;
+                translate: 0 !important;
                 order: -3;
+                margin-right: auto;
             }
         }
 

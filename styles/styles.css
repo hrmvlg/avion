@@ -384,6 +384,7 @@ h6 {
        column-gap: 20px;
   align-items: center;
   justify-content: space-between;
+  position: relative;
 }
 @media (max-width: 390px) {
   .header__top {
@@ -395,9 +396,18 @@ h6 {
     order: -2;
   }
 }
+.header__top-logo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  translate: -50% -50%;
+}
 @media (max-width: 390px) {
   .header__top-logo {
+    position: unset;
+    translate: 0 !important;
     order: -3;
+    margin-right: auto;
   }
 }
 .header__top-group {
