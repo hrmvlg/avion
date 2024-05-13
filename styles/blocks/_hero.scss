@@ -1,0 +1,26 @@
+.hero{
+    margin-block: 60px;
+    background-color: var(--color-primary-dark);
+    color: var(--color-white);
+
+    &__inner{
+        display: flex;
+        justify-content: space-between;
+        column-gap: 98px;
+    }
+
+    &__body{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding-block: 60px;
+        padding-left: 60px;
+    }
+
+    &__top{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        row-gap: 40px;
+    }
+}
