@@ -379,6 +379,12 @@ h6 {
   flex-direction: column;
   padding-inline: 28px;
 }
+@media (max-width: 390px) {
+  .header {
+    padding: 20px;
+    padding-left: 24px;
+  }
+}
 .header__top {
   display: flex;
   -moz-column-gap: 20px;
