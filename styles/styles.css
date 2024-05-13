@@ -200,27 +200,27 @@ h1, h2, h3, h4, h5, h6 {
   font-family: var(--second-family);
 }
 
-h1 {
+h1, .h1 {
   font-size: 36px;
 }
 
-h2 {
+h2, .h2 {
   font-size: 32px;
 }
 
-h3 {
+h3, .h3 {
   font-size: 24px;
 }
 
-h4 {
+h4, .h4 {
   font-size: 20px;
 }
 
-h5 {
+h5, .h5 {
   font-size: 16px;
 }
 
-h6 {
+h6, .h6 {
   font-size: 14px;
 }
 
@@ -743,5 +743,59 @@ h6 {
 @media (max-width: 390px) {
   .differences-card__icon {
     margin-bottom: 4px;
+  }
+}
+
+.grid {
+  --gridColumns: 1;
+  display: grid;
+  grid-template-columns: repeat(var(--gridColumns), 1fr);
+  gap: 20px;
+}
+.grid--4 {
+  --gridColumns: 4;
+}
+@media (max-width: 390px) {
+  .grid--4 {
+    --gridColumns: 2;
+    gap: 16px;
+  }
+}
+
+.ceramics {
+  padding-top: 80px;
+  padding-bottom: 56px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 34px;
+}
+@media (max-width: 390px) {
+  .ceramics {
+    padding-top: 48px;
+    padding-bottom: 38px;
+  }
+}
+.ceramics__button {
+  align-self: center;
+}
+@media (max-width: 390px) {
+  .ceramics__button {
+    width: 100%;
+  }
+}
+
+.ceramics-card {
+  display: flex;
+  flex-direction: column;
+  row-gap: 8px;
+}
+.ceramics-card__image {
+  margin-bottom: 16px;
+}
+@media (max-width: 390px) {
+  .ceramics-card__image {
+    width: 163px;
+    height: 201px;
   }
 }/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,15 @@
+.grid {
+    --gridColumns: 1;
+
+    display: grid;
+    grid-template-columns: repeat(var(--gridColumns), 1fr);
+    gap: 20px;
+
+    &--4 {
+        --gridColumns: 4;
+        @include mobile{
+            --gridColumns: 2;
+            gap: 16px;
+        }
+    }
+}

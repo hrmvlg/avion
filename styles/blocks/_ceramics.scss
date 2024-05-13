@@ -1,0 +1,22 @@
+.ceramics {
+    padding-top: 80px;
+    padding-bottom: 56px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 34px;
+
+    @include mobile {
+        padding-top: 48px;
+        padding-bottom: 38px;
+    }
+
+    &__button {
+        align-self: center;
+
+        @include mobile {
+            width: 100%;
+        }
+    }
+}
