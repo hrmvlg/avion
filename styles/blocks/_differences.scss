@@ -6,12 +6,21 @@
     row-gap: 50px;
     align-items: center;
 
-    --diffListGap: 70px;
+    @include mobile{
+        padding-top: 40px;
+        padding-bottom: 45px;
+        row-gap: 36px;
+    }
 
     &__list {
         display: flex;
         flex-direction: row;
         column-gap: 70px;
+
+        @include mobile{
+            flex-direction: column;
+            row-gap: 36px;
+        }
     }
 
     &__item {
@@ -20,6 +29,12 @@
 
         &:first-child{
             margin-left: 6px;
+        }
+
+        @include mobile{
+            &:first-child{
+                margin-left: 0;
+            }
         }
     }
 

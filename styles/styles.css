@@ -687,13 +687,25 @@ h6 {
   flex-direction: column;
   row-gap: 50px;
   align-items: center;
-  --diffListGap: 70px;
+}
+@media (max-width: 390px) {
+  .differences {
+    padding-top: 40px;
+    padding-bottom: 45px;
+    row-gap: 36px;
+  }
 }
 .differences__list {
   display: flex;
   flex-direction: row;
   -moz-column-gap: 70px;
        column-gap: 70px;
+}
+@media (max-width: 390px) {
+  .differences__list {
+    flex-direction: column;
+    row-gap: 36px;
+  }
 }
 .differences__item {
   max-height: 124px;
@@ -702,12 +714,22 @@ h6 {
 .differences__item:first-child {
   margin-left: 6px;
 }
+@media (max-width: 390px) {
+  .differences__item:first-child {
+    margin-left: 0;
+  }
+}
 
 .differences-card {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   row-gap: 8px;
+}
+@media (max-width: 390px) {
+  .differences-card {
+    row-gap: 12px;
+  }
 }
 .differences-card__icon {
   width: 24px;
@@ -717,4 +739,9 @@ h6 {
   justify-content: center;
   align-items: center;
   margin-bottom: 8px;
+}
+@media (max-width: 390px) {
+  .differences-card__icon {
+    margin-bottom: 4px;
+  }
 }/*# sourceMappingURL=styles.css.map */
