@@ -338,17 +338,17 @@ h6, .h6 {
   }
 }
 .button--primary {
-  background-color: var(--color-dark-primary);
+  background-color: var(--color-primary-dark);
   color: var(--color-white);
 }
 @media (hover: hover) {
   .button--primary:hover {
-    background-color: var(--color-dark-primary-hover);
+    background-color: var(--color-primary-dark-hover);
   }
 }
 @media (hover: none) {
   .button--primary:active {
-    background-color: var(--color-dark-primary-hover);
+    background-color: var(--color-primary-dark-hover);
   }
 }
 .button--opaque {

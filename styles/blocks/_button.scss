@@ -28,11 +28,11 @@
     }
 
     &--primary {
-        background-color: var(--color-dark-primary);
+        background-color: var(--color-primary-dark);
         color: var(--color-white);
 
         @include hover {
-            background-color: var(--color-dark-primary-hover);
+            background-color: var(--color-primary-dark-hover);
         }
     }
 
