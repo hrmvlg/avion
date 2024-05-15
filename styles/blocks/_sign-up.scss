@@ -1,0 +1,27 @@
+.sign-up {
+
+    &__container {
+        background-color: var(--color-light-gray);
+        padding-top: 52px;
+        padding-bottom: 65px;
+    }
+
+    background-color: var(--color-white);
+    padding-top: 68px;
+    padding-bottom: 54px;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 16px;
+
+    &__description{
+        max-width: 470px;
+        text-align: center;
+    }
+
+    &__input-container{
+        margin-top: 56px;
+    }
+}
