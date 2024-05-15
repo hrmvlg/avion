@@ -366,13 +366,13 @@ h6, .h6 {
 @media (hover: hover) {
   .button--opaque:hover {
     background-color: rgba(249, 249, 249, 0.3);
-    border: none;
+    border: 1px solid transparent;
   }
 }
 @media (hover: none) {
   .button--opaque:active {
     background-color: rgba(249, 249, 249, 0.3);
-    border: none;
+    border: 1px solid transparent;
   }
 }
 .button--ghost {

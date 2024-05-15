@@ -43,7 +43,7 @@
 
         @include hover {
             background-color: rgba(249, 249, 249, 0.3);
-            border: none;
+            border: 1px solid transparent;
         }
     }
 
