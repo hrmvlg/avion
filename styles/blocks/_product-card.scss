@@ -3,12 +3,9 @@
     flex-direction: column;
     row-gap: 8px;
 
-    &__image {
-        margin-bottom: 16px;
-
-        @include mobile {
-            width: 163px;
-            height: 201px;
+    &--large{
+        @include mobile{
+            display: none;
         }
     }
 }

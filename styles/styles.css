@@ -767,13 +767,21 @@ h6, .h6 {
   padding-bottom: 56px;
   display: flex;
   flex-direction: column;
-  align-items: center;
   row-gap: 34px;
 }
 @media (max-width: 390px) {
   .ceramics {
     padding-top: 48px;
     padding-bottom: 38px;
+  }
+}
+.ceramics__item img {
+  margin-bottom: 16px;
+}
+@media (max-width: 390px) {
+  .ceramics__item img {
+    width: 163px;
+    height: 201px;
   }
 }
 .ceramics__button {
@@ -785,17 +793,64 @@ h6, .h6 {
   }
 }
 
-.ceramics-card {
+.product-card {
   display: flex;
   flex-direction: column;
   row-gap: 8px;
 }
-.ceramics-card__image {
+@media (max-width: 390px) {
+  .product-card--large {
+    display: none;
+  }
+}
+
+.popular {
+  padding-top: 64px;
+  padding-bottom: 48px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 25px;
+}
+@media (max-width: 390px) {
+  .popular {
+    padding-top: 48px;
+    padding-bottom: 38px;
+    row-gap: 32px;
+  }
+}
+.popular__list {
+  display: flex;
+  flex-direction: row;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+}
+@media (max-width: 390px) {
+  .popular__list {
+    overflow-x: scroll;
+  }
+}
+.popular__item img {
   margin-bottom: 16px;
 }
 @media (max-width: 390px) {
-  .ceramics-card__image {
-    width: 163px;
-    height: 201px;
+  .popular__item img {
+    min-width: 200px;
+    height: 251px;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none;
   }
+}
+.popular__button {
+  align-self: center;
+  margin-top: 17px;
+}
+@media (max-width: 390px) {
+  .popular__button {
+    width: 100%;
+    margin-top: -2px;
+  }
+}
+
+.large-item {
+  display: none;
 }/*# sourceMappingURL=styles.css.map */

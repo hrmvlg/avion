@@ -1,0 +1,44 @@
+.popular {
+    padding-top: 64px;
+    padding-bottom: 48px;
+
+    display: flex;
+    flex-direction: column;
+    row-gap: 25px;
+
+    @include mobile {
+        padding-top: 48px;
+        padding-bottom: 38px;
+        row-gap: 32px;
+    }
+
+    &__list{
+        display: flex;
+        flex-direction: row;
+        column-gap: 20px;
+        @include mobile{
+            overflow-x: scroll;
+        }
+    }
+
+    &__item img {
+        margin-bottom: 16px;
+
+        @include mobile {
+            min-width: 200px;
+            height: 251px;
+            scroll-snap-type: x mandatory;
+            scrollbar-width: none;
+        }
+    }
+
+    &__button {
+        align-self: center;
+        margin-top: 17px;
+
+        @include mobile {
+            width: 100%;
+            margin-top: -2px;
+        }
+    }
+}
