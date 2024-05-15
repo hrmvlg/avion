@@ -386,6 +386,9 @@ h6, .h6 {
 .button--ghost:disabled {
   border: var(--border-button-small);
 }
+.button--input {
+  width: 118px;
+}
 
 .icon {
   display: flex;
