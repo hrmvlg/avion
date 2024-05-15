@@ -851,6 +851,8 @@ h6, .h6 {
   }
 }
 
-.large-item {
-  display: none;
+@media (max-width: 390px) {
+  .large-item {
+    display: none;
+  }
 }/*# sourceMappingURL=styles.css.map */

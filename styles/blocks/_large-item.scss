@@ -1,3 +1,5 @@
-.large-item{
-    display: none;
+.large-item {
+    @include mobile {
+        display: none;
+    }
 }
