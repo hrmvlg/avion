@@ -4,24 +4,50 @@
         background-color: var(--color-light-gray);
         padding-top: 52px;
         padding-bottom: 65px;
+
+        @include mobile {
+            background-color: var(--color-white);
+            padding-block: 0;
+        }
     }
 
     background-color: var(--color-white);
     padding-top: 68px;
     padding-bottom: 54px;
-    
+
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     row-gap: 16px;
 
-    &__description{
-        max-width: 470px;
-        text-align: center;
+    @include mobile {
+        padding-top: 48px;
+        padding-bottom: 38px;
+        align-items: flex-start;
     }
 
-    &__input-container{
+    &__title {
+        @include mobile {
+            font-size: 20px;
+        }
+    }
+
+    &__description {
+        max-width: 470px;
+        text-align: center;
+
+        @include mobile {
+            font-size: 14px;
+            text-align: left;
+        }
+    }
+
+    &__input-container {
         margin-top: 56px;
+
+        @include mobile {
+            margin-top: 48px;
+        }
     }
 }

@@ -918,10 +918,39 @@ h6, .h6 {
   padding-top: 52px;
   padding-bottom: 65px;
 }
+@media (max-width: 390px) {
+  .sign-up__container {
+    background-color: var(--color-white);
+    padding-block: 0;
+  }
+}
+@media (max-width: 390px) {
+  .sign-up {
+    padding-top: 48px;
+    padding-bottom: 38px;
+    align-items: flex-start;
+  }
+}
+@media (max-width: 390px) {
+  .sign-up__title {
+    font-size: 20px;
+  }
+}
 .sign-up__description {
   max-width: 470px;
   text-align: center;
 }
+@media (max-width: 390px) {
+  .sign-up__description {
+    font-size: 14px;
+    text-align: left;
+  }
+}
 .sign-up__input-container {
   margin-top: 56px;
+}
+@media (max-width: 390px) {
+  .sign-up__input-container {
+    margin-top: 48px;
+  }
 }/*# sourceMappingURL=styles.css.map */
