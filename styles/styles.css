@@ -252,6 +252,7 @@ h6, .h6 {
   --color-white: #ffffff;
   --border-button: 2px solid var(--color-primary);
   --border-button-small: 1px solid var(--color-primary);
+  --border-input: 1px solid var(--color-primary-dark);
   --button-height: 56px;
   --button-height-small: 48px;
   --font-family-base: "Satoshi", sans-serif;
@@ -953,4 +954,8 @@ h6, .h6 {
   .sign-up__input-container {
     margin-top: 48px;
   }
+}
+.sign-up__input:focus {
+  border: var(--border-input);
+  outline: none;
 }/*# sourceMappingURL=styles.css.map */
