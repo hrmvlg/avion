@@ -962,24 +962,62 @@ h6, .h6 {
 
 .features {
   display: flex;
+  flex-direction: row;
   -moz-column-gap: 100px;
        column-gap: 100px;
+}
+@media (max-width: 390px) {
+  .features {
+    flex-direction: column;
+  }
 }
 .features__left-content, .features__top-content {
   display: flex;
   flex-direction: column;
 }
 .features__left-content {
+  justify-content: flex-start;
   margin-top: 72px;
   margin-left: 4px;
   row-gap: 196px;
 }
+@media (max-width: 390px) {
+  .features__left-content {
+    margin-top: 48px;
+    margin-left: 0;
+    row-gap: 64px;
+  }
+}
 .features__top-content {
   row-gap: 25px;
 }
-.features__description {
-  font-size: 16px;
+@media (max-width: 390px) {
+  .features__top-content {
+    row-gap: 12px;
+  }
+}
+@media (max-width: 390px) {
+  .features__bottom-content {
+    margin-bottom: 38px;
+  }
+}
+@media (max-width: 390px) {
+  .features__button {
+    width: 100%;
+  }
+}
+@media (max-width: 390px) {
+  .features__description {
+    font-size: 14px;
+  }
 }
 .features__image {
   margin-right: -80px;
+}
+@media (max-width: 390px) {
+  .features__image {
+    height: 358px;
+    min-width: 390px;
+    margin-left: -24px;
+  }
 }/*# sourceMappingURL=styles.css.map */
