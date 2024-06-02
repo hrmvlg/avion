@@ -958,4 +958,28 @@ h6, .h6 {
 .sign-up__input:focus {
   border: var(--border-input);
   outline: none;
+}
+
+.features {
+  display: flex;
+  -moz-column-gap: 100px;
+       column-gap: 100px;
+}
+.features__left-content, .features__top-content {
+  display: flex;
+  flex-direction: column;
+}
+.features__left-content {
+  margin-top: 72px;
+  margin-left: 4px;
+  row-gap: 196px;
+}
+.features__top-content {
+  row-gap: 25px;
+}
+.features__description {
+  font-size: 16px;
+}
+.features__image {
+  margin-right: -80px;
 }/*# sourceMappingURL=styles.css.map */

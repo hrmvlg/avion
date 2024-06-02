@@ -1,0 +1,28 @@
+.features {
+    display: flex;
+    column-gap: 100px;
+
+    &__left-content,
+    &__top-content{
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__left-content{
+        margin-top: 72px;
+        margin-left: 4px;
+        row-gap: 196px;
+    }
+
+    &__top-content{
+        row-gap: 25px;
+    }
+
+    &__description{
+        font-size: 16px;
+    }
+
+    &__image{
+        margin-right: -80px;
+    }
+}
